@@ -58,3 +58,13 @@ def decode_morse_word(morse_word)
 
   _decoded_word
 end
+
+def decode_morse_message(morse_message)
+  _decoded_message = ""
+
+  morse_message.split("   ").each do |word|
+    _decoded_message = "#{_decoded_message}#{decode_morse_word(word)}"
+  end
+
+  _decoded_message
+end
