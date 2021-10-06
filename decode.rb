@@ -1,5 +1,3 @@
-# Create a method to decode a Morse code character, takes a string parameter, and return the corresponding character in uppercase (e.g. decode_char(".-") returns "A").
-
 def decode_morse_char(morse_char)
   morse_to_char = {
     "-----" => "0",
@@ -50,8 +48,6 @@ def decode_morse_char(morse_char)
   }
   morse_to_char[morse_char]  
 end
-
-# Create a method to decode an entire word in Morse code, takes a string parameter, and return the string representation. Every character in a word will be separated by a single space (e.g. decode_word("-- -.--") returns "MY").
 
 def decode_morse_word(morse_word)
   _decoded_word = ""
